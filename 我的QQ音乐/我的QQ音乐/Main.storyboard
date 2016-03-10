@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FXViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uSr-Qr-pyG" userLabel="背景图片">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Kwm-l5-W1Y" userLabel="iconView">
+                                <rect key="frame" x="40" y="115" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲歌词" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gUh-pG-ebJ" customClass="FXLrcLabel">
+                                <rect key="frame" x="93" y="367" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="fbH-YX-8uf" userLabel="lrcView" customClass="FXLrcView">
+                                <rect key="frame" x="0.0" y="102" width="480" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="piv-Ld-2u7" userLabel="顶部的view">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UMN-hs-sg9" userLabel="顶部左边按钮">
+                                        <rect key="frame" x="8" y="14" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="miniplayer_btn_playlist_close"/>
+                                        <state key="highlighted" image="miniplayer_btn_playlist_close_b"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KwH-IE-zf6" userLabel="顶部右边按钮">
+                                        <rect key="frame" x="262" y="14" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="main_tab_more">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="main_tab_more_h"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tvq-W5-uUh">
+                                        <rect key="frame" x="106" y="22" width="108" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XrY-LX-y6H">
+                                        <rect key="frame" x="116" y="56" width="82" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="jFp-53-f3T" userLabel="底部的view">
+                                <rect key="frame" x="0.0" y="391" width="320" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ull-Cd-YhN" userLabel="底部左边按钮">
+                                        <rect key="frame" x="44" y="81" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="player_btn_pre_normal"/>
+                                        <state key="highlighted" image="player_btn_pre_highlight"/>
+                                        <connections>
+                                            <action selector="previous" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsn-ti-e0i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ITW-ZZ-kww" userLabel="底部中间按钮">
+                                        <rect key="frame" x="128" y="81" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="player_btn_play_normal"/>
+                                        <state key="selected" image="player_btn_pause_normal"/>
+                                        <state key="highlighted" image="player_btn_play_highlight"/>
+                                        <connections>
+                                            <action selector="playOrPause" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4g-rQ-VBu"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="QjU-JV-o5a" userLabel="progress slider">
+                                        <rect key="frame" x="42" y="32" width="223" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="minimumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="endSlide" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rg3-1L-Cjk"/>
+                                            <action selector="sliderValueChange" destination="BYZ-38-t0r" eventType="touchUpOutside" id="9xj-4g-AFb"/>
+                                            <action selector="startSlide" destination="BYZ-38-t0r" eventType="touchDown" id="D6R-8Y-dbq"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总时长" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XPo-y2-cmR">
+                                        <rect key="frame" x="271" y="36" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JSJ-Yc-34k">
+                                        <rect key="frame" x="-6" y="36" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9LL-vR-8W0" userLabel="底部右边按钮">
+                                        <rect key="frame" x="216" y="81" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="player_btn_next_normal"/>
+                                        <state key="highlighted" image="player_btn_next_highlight"/>
+                                        <connections>
+                                            <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aze-si-ftQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumView" destination="uSr-Qr-pyG" id="jh9-0A-bwf"/>
+                        <outlet property="currentTimeLabel" destination="JSJ-Yc-34k" id="KsV-Bf-10U"/>
+                        <outlet property="iconView" destination="Kwm-l5-W1Y" id="N2b-sU-d3k"/>
+                        <outlet property="lrcLabel" destination="gUh-pG-ebJ" id="bFG-Hb-Yia"/>
+                        <outlet property="lrcView" destination="fbH-YX-8uf" id="VLn-h2-xVR"/>
+                        <outlet property="playOrPauseBtn" destination="ITW-ZZ-kww" id="dsm-XK-8dM"/>
+                        <outlet property="progressSlider" destination="QjU-JV-o5a" id="7Mx-4O-DwR"/>
+                        <outlet property="singerLabel" destination="XrY-LX-y6H" id="yfV-0K-hRy"/>
+                        <outlet property="songLabel" destination="tvq-W5-uUh" id="HWN-Ph-cae"/>
+                        <outlet property="totalTimeLabel" destination="XPo-y2-cmR" id="PNp-GB-SPj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main_tab_more" width="45" height="45"/>
+        <image name="main_tab_more_h" width="45" height="45"/>
+        <image name="miniplayer_btn_playlist_close" width="40" height="40"/>
+        <image name="miniplayer_btn_playlist_close_b" width="40" height="40"/>
+        <image name="player_btn_next_highlight" width="64" height="64"/>
+        <image name="player_btn_next_normal" width="64" height="64"/>
+        <image name="player_btn_pause_normal" width="64" height="64"/>
+        <image name="player_btn_play_highlight" width="64" height="64"/>
+        <image name="player_btn_play_normal" width="64" height="64"/>
+        <image name="player_btn_pre_highlight" width="64" height="64"/>
+        <image name="player_btn_pre_normal" width="64" height="64"/>
+    </resources>
+</document>
