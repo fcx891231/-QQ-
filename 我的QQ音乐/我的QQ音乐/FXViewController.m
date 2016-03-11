@@ -76,6 +76,7 @@
     // 4.设置lrcView的ContentSize
     self.lrcView.contentSize = CGSizeMake(self.view.bounds.size.width * 2, 0);
     self.lrcView.lrcLabel = self.lrcLabel;
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)viewWillLayoutSubviews
